@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.button.yatpawjava.button1.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PRESS ME"
+        android:id="@+id/mFristButton"
+        android:layout_marginTop="144dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PRESS ME SECOND"
+        android:id="@+id/mSecondButton"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PRESS ME THREE"
+        android:id="@+id/mThirdButton"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="55dp"
+        android:layout_alignRight="@+id/mSecondButton"
+        android:layout_alignEnd="@+id/mSecondButton"
+        android:layout_alignLeft="@+id/mSecondButton"
+        android:layout_alignStart="@+id/mSecondButton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PRESS ME FOUR"
+        android:id="@+id/mFourthButton"
+        android:layout_below="@+id/mSecondButton"
+        android:layout_alignLeft="@+id/mSecondButton"
+        android:layout_alignStart="@+id/mSecondButton" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PRESS ME FIVE"
+        android:id="@+id/mFiveButton"
+        android:layout_below="@+id/mFristButton"
+        android:layout_centerHorizontal="true"
+        android:onClick="performStuff"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PRESS ME SIX"
+        android:id="@+id/mSixButton"
+        android:layout_below="@+id/mFourthButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:onClick="performStuff"/>
+</RelativeLayout>
